@@ -16,7 +16,7 @@ docker container run -d --name webhost3 -p 8090:80 nginx
 
 ## Show list of running containers
 
-### ATTENTITION
+### ATTENTION
 
 Only running containes will be shown
 ```
@@ -44,7 +44,7 @@ docker container start webhost1 webhost2 webhost3
 
 ## Remove containers
 
-### ATTENTITION
+### ATTENTION
 Only stopped containers can be removed
 
 ```

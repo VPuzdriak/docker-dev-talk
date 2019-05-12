@@ -36,13 +36,13 @@ Docker image was pushed, now your colleague can pull it and run.
 ### Check your images.
 
 ```
-docker image ls
+> docker image ls
 ```
 
 You will find out that your image consumes almost 1GB of disk space.
-This app cannot take so much space, which means that node:8 consumes a lot as we are using it in FROM command.
+This app cannot take so much space, which means that __**node:8**__ consumes a lot as we are using it in **FROM** command.
 
-And that is right. In the list of your images you can find also node:8 image, which consumes almost 900MB.
+And that is right. In the list of your images you can find also __**node:8**__ image, which consumes almost 900MB.
 
 
 ### Replacing heavy NodeJS

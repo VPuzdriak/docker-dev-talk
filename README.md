@@ -4,13 +4,13 @@
 
 ### Build Docker image and put tag on it using -t flag
 ```
-> docker image build -t <docker hub username>/random-captain
+> docker image build -t <docker hub username>/random-captain .
 ```
 
 Instead of _**\<docker hub username\>**_ paste your username, i.e. in my case the up command will look like this:
 
 ```
-> docker image build -t vpuzdriak/random-captain
+> docker image build -t vpuzdriak/random-captain .
 ```
 
 This will create a new image with _**\<docker hub username\>/random-captain**_ tag.

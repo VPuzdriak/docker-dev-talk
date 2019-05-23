@@ -131,3 +131,11 @@ Containers, which can use this network should be stopped and removed.
 ```
 > docker network prune
 ```
+
+## DNS resolution
+
+In the nginx/nginx.conf file you can find a section for redirecting incoming requests to our app, which can be accessible via http://random-captain-app:3000 URL.
+Why this URL is that specific. Actually the URL - is the name of the container of our app.
+
+Docker has built-in DNS server, which can resolve IP address of our containers in order to simplify communication between them.
+By default the name of the container will become a DNS name, however you can specify it differently using __**\--alias**__ flag in the container run command.

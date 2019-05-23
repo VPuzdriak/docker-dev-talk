@@ -29,7 +29,7 @@ Image is ready - let's run a container
 ```
 > docker container run -d --name random-captain-app random-captain-app:alpine
 ```
-You can check various options in web browser, such as __**localhost**__, __**localhost:3000**___ - it will not work.
+You can check various options in web browser, such as __**localhost**__, __**localhost:3000**__ - it will not work.
 
 Pay attention that we do not use __**\-p**__ flag here. We do not want our application be accessible from the outside. 
 We want that only nginx can talk to our app. That's why in the browser we see an error.
@@ -135,7 +135,7 @@ Containers, which can use this network should be stopped and removed.
 ## DNS resolution
 
 In the nginx/nginx.conf file you can find a section for redirecting incoming requests to our app, which can be accessible via http://random-captain-app:3000 URL.
-Why this URL is that specific. Actually the URL - is the name of the container of our app.
+Why this URL is that specific? Actually the URL - is the name of the container of our app.
 
 Docker has built-in DNS server, which can resolve IP address of our containers in order to simplify communication between them.
 By default the name of the container will become a DNS name, however you can specify it differently using __**\--alias**__ flag in the container run command.

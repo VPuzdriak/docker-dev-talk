@@ -21,6 +21,12 @@ Usually we use bind mount for development purposes.
 In this particular case we say that when container tries to work with files from __**/usr/share/nginx/html**__, files from current directory should be
 provided instead. So our working files are stored in our host file system and do not exist in container physically.
 
+## Profit
+
+Using bind mount approach, in this particular case, we can develop our website and use nginx at the same moment of time.
+
+This gives us a possibility to develop using same environment, which we are going to have on staging or production phase.
+
 ## Let's analyze our volumes
 
 ### To see a list of volumes:
